@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<button onclick="document.location='index.html'">Back</button>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Raspberry Pi Project</h1>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="work-experience.jpg" alt="Work experience photo" style="width:100%">
+      <h3>Homemade Raspberry Pi Security camera</h3>
+      <p>Here I installed a program for the raspberry pi operating system which is powered by OpenCV to detect objects in view of the camera. OpenCV is a programming library used for real-time computer vision, OpenCV comprises of object detection, face recognition and machine learning for applications to accelerate the use of machine perception in commerical products. </p>
+      <p>This was a very fun home made project to do in my spare time as I was able to freely experiment with how I want the camera to detect objects. For instance, I gave it an option to always send a email with a photo attachment every hour and left it infont of my garden window. It resulted in quite a lot of intresting photos of birds, insects and nature.</p>
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+<body>
+
+</body>
+</html>
