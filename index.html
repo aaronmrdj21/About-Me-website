@@ -307,7 +307,18 @@
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
-
+  <script>
+    // List the background images
+    const images = [
+      'images/bg-pic2.jpg',
+      'images/test.jpg'
+    ];
+    // Randomise a image
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    // Apply it to #home css
+    document.getElementById('home').style.background =
+      `url('${randomImage}') 50% 0 repeat-y fixed`;
+  </script>
 </body>
 
 </html>
